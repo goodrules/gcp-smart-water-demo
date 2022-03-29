@@ -1,2 +1,2 @@
 # gcp-smart-water-demo
- 
+GCP demo that leverages Pub/Sub, Dataflow, and BigQuery to show both batch and streaming data pipelines for telemetry / event type data.  Includes assets to complete a console-based demo using Dataflow template, as well as a Jupyter Notebook for deploying via the Beam and GCP Python SDK.
