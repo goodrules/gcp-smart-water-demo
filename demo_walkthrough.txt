@@ -10,8 +10,14 @@ Fake data stream
 - dataflow template for moving data to BQ 
 - dataflow template for streaming
  
-Steps:
+Steps (batch):
 1) data stream to pub/sub topic to GCS
 2) dataflow job to move JSON file from GCS to BQ table
-3) query BQ table to display conversion
+3) query BQ table to display data
+4) create quick dashboard in data studio
+
+Steps (stream):
+1) data stream to pub/sub topic
+2) dataflow job from pub/sub topic to BQ table
+3) query BQ table to display data (refresh to show more data streaming in)
 4) create quick dashboard in data studio
