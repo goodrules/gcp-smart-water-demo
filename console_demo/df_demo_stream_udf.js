@@ -8,12 +8,16 @@ function transformDeviceSignalEvent(inJson) {
   var original = JSON.parse(inJson)
 
   var transformed = {
-    eventId: original.eventId,
-    deviceId: original.deviceId,
+    radioId: original.deviceId,
     eventTime: original.eventTime,
-    city: original.city,
-    temp: original.temp,
-    flowrate: original.flowrate
+    reading: original.reading,
+    consumptionFlag: original.consumptionFlag,
+    reverseFlowFlag: original.reverseFlowFlag,
+    noFlowFlag: original.noFlowFlag,
+    emptyPipeFlag: original.emptyPipeFlag,
+    temperature: original.temperature,
+    pressure: original.pressure,
+    batteryStatusFlag: original.batteryStatusFlag
   }
 
   return JSON.stringify(transformed)

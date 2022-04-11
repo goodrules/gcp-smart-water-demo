@@ -1,11 +1,7 @@
 {
   "BigQuery Schema": [
     {
-      "name": "eventId",
-      "type": "STRING"
-    },
-    {
-      "name": "deviceId",
+      "name": "radioId",
       "type": "STRING"
     },
     {
@@ -13,16 +9,36 @@
       "type": "DATETIME"
     },
     {
-      "name": "city",
+      "name": "reading",
+      "type": "FLOAT"
+    },
+    {
+      "name": "consumptionFlag",
       "type": "STRING"
     },
     {
-      "name": "temp",
+      "name": "reverseFlowFlag",
+      "type": "STRING"
+    },
+    {
+      "name": "noFlowFlag",
+      "type": "STRING"
+    },
+    {
+      "name": "emptyPipeFlag",
+      "type": "STRING"
+    },
+    {
+      "name": "temperature",
       "type": "FLOAT"
     },
     {
-      "name": "flowrate",
+      "name": "pressure",
       "type": "FLOAT"
+    },
+    {
+      "name": "batteryStatusFlag",
+      "type": "STRING"
     }
   ]
 }
